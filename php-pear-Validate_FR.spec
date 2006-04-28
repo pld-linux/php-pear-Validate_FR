@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - Klasa walidacji dla FR
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
 Release:	1
+Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,8 +17,8 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Validate_FR/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-Requires:	php-pear
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pear
 Requires:	php-pear-Validate >= 0.6.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,7 +35,8 @@ Package containes locale validation for FR such as:
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Pakiet dostarcza metody do sprawdzania poprawno¶ci danych dla Francji:
+Pakiet dostarcza metody do sprawdzania poprawno¶ci dla Francji danych
+takich jak:
  - SSN
  - Kod pocztowy
  - RIB
@@ -77,5 +79,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files tests
 %defattr(644,root,root,755)
-%{php_pear_dir}/tests/Validate_FR/tests/validate_FR.phpt
-%{php_pear_dir}/tests/Validate_FR/tests/bug7389.phpt
+%{php_pear_dir}/tests/Validate_FR

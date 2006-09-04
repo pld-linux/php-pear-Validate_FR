@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Validation class for FR
 Summary(pl):	%{_pearname} - Klasa walidacji dla FR
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
-Release:	1
+Release:	2
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
@@ -23,6 +23,8 @@ Requires:	php-pear
 Requires:	php-pear-Validate >= 0.6.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreq	'pear(FR_insee_country_codes.php)'
 
 %description
 Package containes locale validation for FR such as:

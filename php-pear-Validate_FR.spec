@@ -5,7 +5,7 @@
 %define		_pearname	Validate_FR
 
 Summary:	%{_pearname} - Validation class for FR
-Summary(pl):	%{_pearname} - Klasa walidacji dla FR
+Summary(pl.UTF-8):   %{_pearname} - Klasa walidacji dla FR
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
 Release:	2
@@ -37,8 +37,8 @@ Package containes locale validation for FR such as:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet dostarcza metody do sprawdzania poprawno∂ci dla Francji danych
+%description -l pl.UTF-8
+Pakiet dostarcza metody do sprawdzania poprawno≈õci dla Francji danych
 takich jak:
  - SSN
  - Kod pocztowy
@@ -51,7 +51,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -59,7 +59,7 @@ AutoReq:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep

@@ -5,7 +5,7 @@
 %define		_pearname	Validate_FR
 
 Summary:	%{_pearname} - Validation class for FR
-Summary(pl.UTF-8):   %{_pearname} - Klasa walidacji dla FR
+Summary(pl.UTF-8):	%{_pearname} - Klasa walidacji dla FR
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
 Release:	2
@@ -51,7 +51,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no

@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Validation class for FR
 Summary(pl.UTF-8):	%{_pearname} - Klasa walidacji dla FR
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
-Release:	2
+Release:	3
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP

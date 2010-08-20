@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - Validation class for FR
 Summary(pl.UTF-8):	%{_pearname} - Klasa walidacji dla FR
 Name:		php-pear-%{_pearname}
-Version:	0.5.2
-Release:	3
+Version:	0.6.0
+Release:	1
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	2ec7375cf95905a4093b9e6c9b296692
+# Source0-md5:	9750f7b210b753f7ddacd9748da427c3
 URL:		http://pear.php.net/package/Validate_FR/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11

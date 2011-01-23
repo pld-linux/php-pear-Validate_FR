@@ -18,6 +18,7 @@ BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 Requires:	php-pear-Validate >= 0.6.2
+Obsoletes:	php-pear-Validate_FR-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,19 +47,6 @@ takich jak:
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 
@@ -76,7 +64,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/%{_pearname}/LICENSE
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Validate/FR.php
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/Validate_FR

@@ -1,11 +1,11 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		beta
 %define		_pearname	Validate_FR
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Validation class for FR
 Summary(pl.UTF-8):	%{_pearname} - Klasa walidacji dla FR
 Name:		php-pear-%{_pearname}
 Version:	0.6.0
-Release:	3
+Release:	4
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
@@ -15,7 +15,7 @@ URL:		http://pear.php.net/package/Validate_FR/
 BuildRequires:	php-pear-PEAR >= 1:1.7.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Requires:	php-pear-Validate >= 0.6.2
 Obsoletes:	php-pear-Validate_FR-tests

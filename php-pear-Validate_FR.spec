@@ -6,7 +6,6 @@ Summary(pl.UTF-8):	%{_pearname} - Klasa walidacji dla FR
 Name:		php-pear-%{_pearname}
 Version:	0.6.0
 Release:	4
-Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz

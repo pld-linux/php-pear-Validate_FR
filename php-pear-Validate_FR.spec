@@ -13,7 +13,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Validate_FR/
 BuildRequires:	php-pear-PEAR >= 1:1.7.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Requires:	php-pear-Validate >= 0.6.2
@@ -21,7 +21,7 @@ Obsoletes:	php-pear-Validate_FR-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'pear(FR_insee_country_codes.php)'
+%define		_noautoreq_pear FR_insee_country_codes.php
 
 %description
 Package containes locale validation for FR such as:
